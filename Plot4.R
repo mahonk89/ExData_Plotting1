@@ -34,7 +34,7 @@ with(hhpc,{
     lines(hhpc$DateTime,hhpc$Sub_metering_3,col="blue")
     legend("topright",lty=rep(1,3),legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"),
            col=c("black","red","blue"),bty = "n")
-  plot(hhpc$DateTime,hhpc$Global_reactive_power,type="l",xlab="datetime")
+  plot(hhpc$DateTime,hhpc$Global_reactive_power,type="l",xlab="datetime",ylab="Global_reactive_power")
 })
 dev.copy(png,file="Plot4.png",width=480,height=480)
 dev.off()
@@ -42,3 +42,5 @@ dev.off()
 # since the plot was generated first on screen, then copied to .png with forced
 # pixels, the legend can be affected by resizing if ratio of the on screen
 # plot is not 1:1
+
+
